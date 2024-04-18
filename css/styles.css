@@ -1,0 +1,228 @@
+
+@import url(https:use.fontawesome.com/releases/v6.4.2/css/all.css);
+
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Menú hamburguesa */
+  .menu-hamburguesa {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .titulo-menu{
+    color: #f2f2f2;
+  }
+  .menu-icono {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .menu-items li {
+    padding: 10px;
+  }
+  
+  /* Animación del menú hamburguesa */
+  .menu-abrir .menu-icono:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  
+  .menu-abrir .menu-icono:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-abrir .menu-icono:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+  /* Carrusel de imágenes */
+  .carrusel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .imagen {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background-size: contain;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .imagen:first-child {
+    opacity: 1;
+  }
+  
+  /* Botones para cambiar imágenes */
+  .flecha-izquierda, .flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .flecha-izquierda {
+    left: 20px;
+  }
+  
+  .flecha-derecha {
+    right: 20px;
+  }
+  
+  /* Botón de contacto */
+  .boton-contacto {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-contacto:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Iconos de redes sociales */
+  .redes-sociales {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+  }
+  
+  .redes-sociales a {
+    color: #5f1313;
+    font-size: 42px; /* Tamaño de fuente más grande */
+    margin-right: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Añadir transición para un efecto suave */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agregar sombra para un efecto reflectante */
+}
+
+.redes-sociales a:hover {
+    color: #ff6600; /* Cambiar el color al pasar el cursor */
+    transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
+}
+ /* estilos pagina2 */
+
+/* Estilos para el contenido principal */
+main {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+
+  height: 100vh; /* Altura del contenido principal */
+  position: relative; /* Establece posición relativa */
+  z-index: 2; /* Ajusta el z-index para estar por encima del fondo */
+}
+
+.texto-grande {
+  display: flex;
+  flex-direction: column; /* Coloca los enlaces uno debajo del otro */
+  justify-content: center; /* Centra verticalmente los enlaces */
+  align-items: center; /* Centra horizontalmente los enlaces */
+}
+
+.texto-grande a {
+ 
+  font-size: 80px; /* Tamaño de letra grande */
+  margin: 20px 0; /* Espaciado entre los elementos */
+  color: #b52121; /* Color de texto por defecto */
+  border-color: #000000;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.texto-grande a:hover {
+  color: #ff0000; /* Color de texto al pasar el cursor */
+}
+
+  
+  /* Media queries para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .menu-hamburguesa {
+      top: 10px;
+      right: 10px;
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+        background-size:contain;
+    }
+  
+    .menu-items {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .menu-items li {
+      padding: 5px;
+    }
+  
+    .flecha-izquierda, .flecha-derecha {
+      font-size: 20px;
+    }
+  
+    .boton-contacto {
+      bottom: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .redes-sociales {
+      bottom: 0px;
+      left: 10px;
+    }
+  
+    .redes-sociales a {
+      font-size: 20px;
+    }
+
+    .boton-contacto {
+      bottom: 30px;
+      left: 30px;
+
+      transform: none; /* Reinicia la transformación */
+    }
+  }
+  
