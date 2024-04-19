@@ -126,7 +126,7 @@ body, html {
   }
   
   .redes-sociales a {
-    color: #5f1313;
+    color: #f2efef;
     font-size: 42px; /* Tamaño de fuente más grande */
     margin-right: 10px;
     text-decoration: none;
@@ -162,14 +162,14 @@ main {
  
   font-size: 80px; /* Tamaño de letra grande */
   margin: 20px 0; /* Espaciado entre los elementos */
-  color: #b52121; /* Color de texto por defecto */
+  color: #f4f1f1; /* Color de texto por defecto */
   border-color: #000000;
   transition: color 0.3s ease; /* Transición suave para el cambio de color */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
 }
 
 .texto-grande a:hover {
-  color: #ff0000; /* Color de texto al pasar el cursor */
+  color: #0b0b0b; /* Color de texto al pasar el cursor */
 }
 
   
@@ -182,8 +182,10 @@ main {
     .imagen{
         width: 100%;
         height: 100%;
-        background-size:contain;
+        background-size:cover;
+       
     }
+    
   
     .menu-items {
       position: absolute;
