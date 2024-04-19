@@ -183,7 +183,7 @@ main {
         width:57vh;
         height: 100vh;
         background-size:auto 70vh;
-        background-position: center; /* Centra la imagen dentro del contenedor */
+        background-position:absoluta; /* Centra la imagen dentro del contenedor */
       background-repeat: no-repeat; /* Evita que la imagen se repita */
        
     }
