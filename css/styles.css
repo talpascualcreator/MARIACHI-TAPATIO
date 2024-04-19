@@ -180,11 +180,14 @@ main {
       right: 10px;
     }
     .imagen{
-        width: 100%;
-        height: 100%;
-        background-size:cover;
+        width:375px;
+        height: 667px;
+        background-size:auto 100vh;
+        background-position: center; /* Centra la imagen dentro del contenedor */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
        
     }
+   
     
   
     .menu-items {
