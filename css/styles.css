@@ -2,58 +2,32 @@
 @import url(https:use.fontawesome.com/releases/v6.4.2/css/all.css);
 
 /* Estilo general */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
   
-  /* Menú hamburguesa */
-  .menu-hamburguesa {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .titulo-menu{
-    color: #f2f2f2;
-  }
-  .menu-icono {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: all 0.3s ease;
-  }
-  
-  .menu-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-  }
-  
-  .menu-items li {
-    padding: 10px;
-  }
-  
-  /* Animación del menú hamburguesa */
-  .menu-abrir .menu-icono:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 5px);
-  }
-  
-  .menu-abrir .menu-icono:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-abrir .menu-icono:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -5px);
-  }
+  /* Estilos del menú de navegación */
+.menu-hamburguesa {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.titulo-menu {
+  font-size: 1.2rem;
+}
   
   /* Carrusel de imágenes */
+
+  header {
+    position: relative;
+    text-align: center;
+  }
   .carrusel {
     position: relative;
     width: 100%;
@@ -124,7 +98,7 @@ body, html {
   /* Estilos para el contenedor del logo y el texto */
 .logo-texto {
   position: absolute;
-  top: 620px;
+  top: 695px;
   right: 20px;
   display: flex;
   align-items: center;
@@ -140,15 +114,7 @@ body, html {
   font-size: 2rem; /* Tamaño de la fuente */
   margin: 0; /* Eliminar margen */
 }
-.fireworks {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
+
 
 @keyframes moverLogoTexto {
   0% { transform: translateX(100%); } /* Comienza desde la derecha */
@@ -159,26 +125,7 @@ body, html {
   animation: moverLogoTexto 30s linear infinite; /* Animación continua */
 }
   
-  /* Iconos de redes sociales */
-  .redes-sociales {
-    position: absolute;
-    bottom: 40px;
-    left: 30px;
-  }
   
-  .redes-sociales a {
-    color: #f2efef;
-    font-size: 42px; /* Tamaño de fuente más grande */
-    margin-right: 10px;
-    text-decoration: none;
-    transition: transform 0.3s ease; /* Añadir transición para un efecto suave */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agregar sombra para un efecto reflectante */
-}
-
-.redes-sociales a:hover {
-    color: #ff6600; /* Cambiar el color al pasar el cursor */
-    transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
-}
  /* estilos pagina2 */
 
 /* Estilos para el contenido principal */
@@ -252,13 +199,21 @@ main {
   position: relative;
   overflow: hidden;
 }
+.foto h1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  margin: 0;
+}
 
 .foto img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
 }
-
 .foto:hover img {
   transform: scale(1.1);
 }
@@ -274,6 +229,7 @@ main {
   padding: 10px;
   font-size: 14px;
 }
+
 
 /*estilos formacion guitarra*/
 .carousel1-container {
@@ -343,6 +299,10 @@ main {
 }
 
 /*estilos formacion tecnica vocal*/
+#centrar {
+  display:-webkit-flex;
+  justify-content:right;
+}
 
 .carousel2-container {
   position: absolute;
@@ -451,11 +411,18 @@ main {
       background-repeat: no-repeat; /* Evita que la imagen se repita */
    
     }
-    .carousel-container {
-       
+    .carousel1-container {
+      position:absolute;
+       top: 2400px;
       height: 27vh; /* Altura total de la ventana */
      
   }
+  .carouse2-container {
+    position:absolute;
+     top: 300px;
+    height: 27vh; /* Altura total de la ventana */
+   
+}
   div.slide img {
     width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
     height: 100%; /* Mantiene la proporción original de la imagen */
