@@ -111,18 +111,23 @@ var currentYear = new Date().getFullYear();
 // Asigna el año actual al contenido del span
 yearSpan.textContent = currentYear;
 
- // Espera a que el DOM esté completamente cargado
- document.addEventListener('DOMContentLoaded', function() {
-    // Selecciona el botón Contratar
-    const btnContratar = document.querySelector('.btn-contratar');
-
-    // Agrega un evento de pasar el ratón sobre el botón Contratar
-    btnContratar.addEventListener('mouseenter', function() {
-      // Crea la animación de fuegos artificiales
-      fireworks.create({
-        count: 30, // Cantidad de fuegos artificiales
-        colors: ["#ff0000", "#ff8800", "#ffff00", "#00ff00", "#0000ff"], // Colores de los fuegos artificiales
-        backgroundColor: "transparent" // Fondo transparente para que se superpongan sobre el contenido
-      }).play(); // Reproduce la animación
+function init() {
+    // Tu código JS aquí
+    document.addEventListener('DOMContentLoaded', function() {
+        const btnContratar = document.querySelector('.btn-contratar');
+        if (btnContratar) {
+            btnContratar.addEventListener('mouseenter', function() {
+                console.log('Mouse entró en el botón Contratar');
+                fireworks.create({
+                    count: 30,
+                    colors: ["#ff0000", "#ff8800", "#ffff00", "#00ff00", "#0000ff"],
+                    backgroundColor: "transparent"
+                }).play();
+            });
+        } else {
+            console.error('No se encontró ningún elemento con la clase .btn-contratar');
+        }
     });
-  });
+}
+
+init();
