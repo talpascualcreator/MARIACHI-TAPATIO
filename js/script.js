@@ -31,23 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.flecha-izquierda').addEventListener('click', imagenAnterior);
   document.querySelector('.flecha-derecha').addEventListener('click', siguienteImagen);
 
-  // Espera a que el DOM esté completamente cargado
-document.addEventListener("DOMContentLoaded", function() {
-  // Función para activar los fuegos artificiales
-  function activarFuegosArtificiales() {
-    fireworks.create({
-      count: 3, // Cantidad de fuegos artificiales
-      colors: ["#ff0000", "#00ff00", "#0000ff"], // Colores de los fuegos artificiales
-      backgroundColor: "transparent" // Fondo transparente para que se superpongan sobre el contenido
-    }).play();
-  }
 
-  // Detecta cuando la animación del texto alcanza el punto deseado
-  var texto = document.querySelector(".logo-texto");
-  texto.addEventListener("animationiteration", function() {
-    activarFuegosArtificiales();
-  });
-});
 
 // carrusel clase de guitarra
 
@@ -126,3 +110,19 @@ var currentYear = new Date().getFullYear();
 
 // Asigna el año actual al contenido del span
 yearSpan.textContent = currentYear;
+
+ // Espera a que el DOM esté completamente cargado
+ document.addEventListener('DOMContentLoaded', function() {
+    // Selecciona el botón Contratar
+    const btnContratar = document.querySelector('.btn-contratar');
+
+    // Agrega un evento de pasar el ratón sobre el botón Contratar
+    btnContratar.addEventListener('mouseenter', function() {
+      // Crea la animación de fuegos artificiales
+      fireworks.create({
+        count: 30, // Cantidad de fuegos artificiales
+        colors: ["#ff0000", "#ff8800", "#ffff00", "#00ff00", "#0000ff"], // Colores de los fuegos artificiales
+        backgroundColor: "transparent" // Fondo transparente para que se superpongan sobre el contenido
+      }).play(); // Reproduce la animación
+    });
+  });

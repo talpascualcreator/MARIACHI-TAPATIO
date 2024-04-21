@@ -275,6 +275,115 @@ header {
   background-color: #333;
 }
 
+/* Separador  oferta de precios
+*/
+.separator {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.separator .sep-left,
+.separator .sep-right {
+  display: flex;
+}
+
+.sep-line {
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+}
+
+/* Columna */
+.column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.column-inner {
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+}
+
+
+
+/* Precios */
+.pricing-table {
+  margin: 20px 0;
+}
+
+.pricing-cols {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-col {
+  
+  width: 30%;
+  background-color: #d0a7137a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Plan */
+.pricing-plan {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Precio */
+.pricing-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000; /* Ajusta el color según tus necesidades */
+}
+
+/* Características */
+.pricing-features ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.pricing-features ul li {
+  margin-bottom: 10px;
+}
+
+.pricing-features ul li strong {
+  font-weight: bold;
+}
+
+/* Botón de contratar */
+.pricing-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-contratar {
+  display: inline-block;
+  background-color: #ff0000; /* Ajusta el color según tus necesidades */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contratar:hover {
+  background-color: #cc0000; /* Ajusta el color hover según tus necesidades */
+}
+
+
 /* Estilos del footer */
 footer {
   background-color: #333;
@@ -338,6 +447,15 @@ footer {
   }
   .slide2 img{
     width: 100%;
+  }
+  .pricing-cols{
+    display:grid;
+    gap: 20px;
+    
+  }
+  .pricing-col{
+    width: 90%;
+   
   }
   
 }
