@@ -442,6 +442,11 @@ footer {
     white-space: nowrap;
     font-size: 8px;
   }
+
+  .logo-texto{
+    position: absolute;
+    top: 725px;
+  }
   .slide1 img{
     width: 100%;
   }
