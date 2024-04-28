@@ -183,6 +183,10 @@ header {
   text-align: justify;
 }
 
+#centrar{
+  margin-top: 70px;
+}
+
 /* Estilos del carrusel 1 */
 .carousel1-container {
   position: relative;
