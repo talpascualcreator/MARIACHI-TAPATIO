@@ -477,8 +477,13 @@ footer {
   }
 
   .carrusel{
-    height:10% ;
-  }    
+   
+    height: 600px; /* Modifica la altura para pantallas más pequeñas */
+  }  
+  
+  .imagen {
+    height: 50%; /* Modifica la altura de las imágenes para pantallas más pequeñas */
+  }
 
   .carousel1-container,
   .carousel2-container {
