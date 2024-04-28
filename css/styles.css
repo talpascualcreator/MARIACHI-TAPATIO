@@ -50,7 +50,7 @@ header {
 .flecha-izquierda,
 .flecha-derecha {
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -208,7 +208,7 @@ img{
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -268,7 +268,7 @@ img{
 .prev2,
 .next2 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;

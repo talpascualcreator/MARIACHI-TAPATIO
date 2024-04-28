@@ -95,10 +95,10 @@ function showSlides2(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active2", "");
     }
     slides[slideIndex2 - 1].style.display = "block";
-    dots[slideIndex2 - 1].className += " active";
+    dots[slideIndex2 - 1].className += " active2";
 }
  // cambiar automaticamente el año
   
