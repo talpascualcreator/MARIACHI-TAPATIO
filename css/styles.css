@@ -151,6 +151,7 @@ header {
 .foto img {
   width: 100%;
   height: auto;
+
 }
 
 .descripcion {
@@ -181,6 +182,12 @@ header {
 
 .slide1 {
   flex: 0 0 100%;
+}
+
+img{
+  width: 100%;
+  height: auto;
+
 }
 
 .prev,
