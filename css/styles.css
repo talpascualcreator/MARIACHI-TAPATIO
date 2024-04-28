@@ -28,18 +28,19 @@ header {
 
 .carrusel {
   width: 100%;
-  height: 100vh;
+  height: 1100px;
   position: relative;
   overflow: hidden;
+  background-size:cover ;
   
 }
 
 .imagen {
   position: absolute;
-  top: 0px;
+  top:0px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-size: cover;
   background-position: center;
   transition: opacity 0.5s ease;
@@ -93,7 +94,7 @@ header {
   
 .logo-texto {
   position: absolute;
-  top: 695px;
+  top: 1000px;
   right: 20px;
   display: flex;
   align-items: center;
@@ -112,7 +113,7 @@ header {
 /* Estilos del video */
 .video-container {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 0px;
   width:  100%;
   height: 100%;
 }
@@ -144,6 +145,7 @@ header {
 .foto {
   position: relative;
   overflow: hidden;
+  margin-top: 70px;
 }
 
 .foto img {
@@ -445,7 +447,7 @@ footer {
 
   .logo-texto{
     position: absolute;
-    top: 725px;
+    top: 400px;
   }
   .slide1 img{
     width: 100%;
@@ -464,5 +466,29 @@ footer {
   }
   
 }
+
+@media screen and (max-width: 768px) {
+  .carrusel {
+    height: 800px; /* Modifica la altura para adaptarse a pantallas pequeñas */
+  }
+  
+  .imagen {
+    height: 60%; /* Modifica la altura de las imágenes para adaptarse a pantallas pequeñas */
+  }
+  .video-container{
+    margin-top: -200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carrusel {
+    height: 600px; /* Modifica la altura para pantallas más pequeñas */
+  }
+  
+  .imagen {
+    height: 50%; /* Modifica la altura de las imágenes para pantallas más pequeñas */
+  }
+}
+
 
   
