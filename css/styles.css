@@ -82,6 +82,8 @@ header {
   cursor: pointer;
   border-radius: 50px;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
+ 
 }
 
 .boton-contacto:hover {
@@ -458,11 +460,16 @@ footer {
   .carousel2-container {
     max-width: 500px;
   }
+ 
 }
 
 @media screen and (max-width: 480px) {
   .album-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .boton-contacto{
+    bottom: 120px;
+    left: 48%;
   }
 
   .carousel1-container,
