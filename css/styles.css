@@ -120,7 +120,7 @@ header {
 
 .video-container h1 {
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: 4px;
   color: #333;
 }
 
@@ -170,7 +170,7 @@ header {
   display: block; /* Mostrar la descripción cuando se pasa el mouse sobre la foto */
 }
 
-.foto h1 {
+.foto h2 {
   background-color: #333; /* Color de fondo para el título */
   padding: 10px; /* Espacio alrededor del título */
   font-size: 24px; /* Tamaño del título */
