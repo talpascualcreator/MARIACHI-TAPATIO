@@ -151,10 +151,11 @@ header {
 .foto img {
   width: 100%;
   height: auto;
-
 }
 
+
 .descripcion {
+  display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -162,10 +163,24 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
+  transition: opacity 0.5s ease; /* Agregamos una transición suave */
+}
+
+.foto:hover .descripcion {
+  display: block; /* Mostrar la descripción cuando se pasa el mouse sobre la foto */
+}
+
+.foto h1 {
+  background-color: #333; /* Color de fondo para el título */
+  padding: 10px; /* Espacio alrededor del título */
+  font-size: 24px; /* Tamaño del título */
+  color: white; /* Color del texto del título */
 }
 
 .descripcion p {
   margin: 0;
+  font-size: 18px; /* Tamaño del texto del párrafo */
+  text-align: justify;
 }
 
 /* Estilos del carrusel 1 */
@@ -228,6 +243,11 @@ img{
 .active {
   background-color: #333;
 }
+.about__paragraph{
+  font-size: 18px; /* Tamaño del texto del párrafo */
+  text-align: justify;
+}
+
 
 /* Estilos del carrusel 2 */
 .carousel2-container {
