@@ -602,8 +602,8 @@ footer {
   }
 
   .photo{
-    width: 375px;
-    height: 667px;
+    
+    background-size: auto;
   }
   .tarjetas{
     display: block;
