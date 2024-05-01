@@ -454,6 +454,66 @@ footer {
   margin-top: 10px;
 }
 
+
+/* Estilos para las tarjetas */
+
+.photo {
+  position: fixed;
+  top:0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.fondo_atras {
+  background-size: contain;
+  background-position: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.tarjeta {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.imagen-tarjeta {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.tarjeta h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+.enlace {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.enlace:hover {
+  color: darkblue;
+}
+
 /* Estilos de medios */
 @media screen and (max-width: 768px) {
   .album-grid {
@@ -539,6 +599,14 @@ footer {
   
   .imagen {
     height: 50%; /* Modifica la altura de las imágenes para pantallas más pequeñas */
+  }
+
+  .photo{
+    width: 375px;
+    height: 667px;
+  }
+  .tarjetas{
+    display: block;
   }
 }
 
