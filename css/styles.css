@@ -213,6 +213,8 @@ img{
   width: 100%;
   height: auto;
 
+  border-radius: 10px 10px 10px 10px;
+
 }
 
 .prev,
@@ -503,7 +505,7 @@ footer {
 }
 
 .enlace {
-  color: blue;
+  color: rgb(249, 249, 251);
   text-decoration: underline;
   cursor: pointer;
   font-size: 16px;
@@ -604,10 +606,13 @@ footer {
   .photo{
     
     background-size: auto;
+  
   }
   .tarjetas{
     display: block;
   }
+
+  
 }
 
 
